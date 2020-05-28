@@ -10,3 +10,5 @@ Category.create(name: "Bullets")
 Category.create(name: "Rabbits")
 
 PersonalityType.create(name: "Pervert", description: "Very Perv")
+
+Product.create(name: "Anal Plug", price: 55.5, description: "Its very fun !", amount: 1, category_id: 2, personality_type_id: 1)
