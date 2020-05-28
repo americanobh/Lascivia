@@ -28,3 +28,10 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
 end
+
+
+# TYPEFORM GEM
+gem 'create_api_gem', git: 'https://github.com/Typeform/create-api-gem.git'
+
+# DOT ENV TOKENS
+gem 'dotenv-rails'
