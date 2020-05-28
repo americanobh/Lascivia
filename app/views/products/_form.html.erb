@@ -1,0 +1,12 @@
+<div class="container">
+
+  <%= simple_form_for(@product) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :price, as: :float %>
+  <%= f.input :amount %>
+  <%= f.association :category, collection: Category.all %>
+  <%= f.association :personality_type, collection: PersonalityType.all %>
+  <%= f.button :submit, "Adicionar ao carrinho", class: "btn btn-warning" %>
+  <% end %>
+</div>
