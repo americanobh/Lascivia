@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col d-flex ">
+      <div class="cart-card d-flex flex-row justify-content-around">
+
+        <div class="order-item-side">
+            <h4 class="card-title">Produtos:</h4>
+            <% OrderItem.all.each do |order_item| %>
+            R$<%= order_item.product.price.to_i %> <%= order_item.product.name %> <br>
+            <% end %>
+        </div>
+
+        <div class="payment-side">
+            <h4 class="card-title">Resumo da Compra:</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

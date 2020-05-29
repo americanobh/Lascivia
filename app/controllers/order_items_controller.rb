@@ -1,5 +1,10 @@
 class OrderItemsController < ApplicationController
   before_action :set_product, only: [ :create ]
+
+  def index
+    @order_items = OrderItem.all
+  end
+
   def create
     if current_user.orders.present?
       @order = current_user.orders.last
@@ -10,6 +15,7 @@ class OrderItemsController < ApplicationController
     @order_item = @order.order_items.new #(order_item_params)
     @order_item.product = @product
     @order_item.save
+    redirect_to orders_path
   end
 
   private
