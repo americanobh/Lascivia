@@ -6,6 +6,7 @@
         <div class="order-item-side">
             <h4 class="card-title">Produtos:</h4>
             <% OrderItem.all.each do |order_item| %>
+            <%= order_item.quantity %>
             R$<%= order_item.product.price.to_i %> <%= order_item.product.name %> <br>
             <% end %>
         </div>

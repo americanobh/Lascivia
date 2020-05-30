@@ -6,15 +6,16 @@ class OrderItemsController < ApplicationController
   end
 
   def create
-    if current_user.orders.present?
-      @order = current_user.orders.last
+    order = Order.find_or_create_by(user: current_user, open: true)
+    order_item = order.order_items.find_by(product_id: @product.id)
+    if order_item.nil?
+      order_item = order.order_items.new #(order_item_params)
+      order_item.product = @product
+      order_item.quantity = 1
     else
-      @order = current_user.orders.new
+      order_item.quantity += 1
     end
-    @order.save
-    @order_item = @order.order_items.new #(order_item_params)
-    @order_item.product = @product
-    @order_item.save
+    order_item.save!
     redirect_to orders_path
   end
 
