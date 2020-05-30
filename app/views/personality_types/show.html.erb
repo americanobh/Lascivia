@@ -1,0 +1,91 @@
+
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1552627019-947c3789ffb5?ixlib=rb-1.2.1)">
+
+  <%= @personality.name %>
+
+</div>
+
+
+<div class="container-show margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-show-card">
+
+        <h3>See my tattoos above</h3>
+
+
+<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails tamanho"
+              data-ride="carousel">
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active ml-auto">
+                  <img class="d-block w-100 ml-auto"
+                    src="<%= @personality.name %>"
+                    alt="First slide">
+                </div>
+                <div class="carousel-item ml-auto">
+                  <img class="d-block w-100"
+                    src="https://i.pinimg.com/originals/59/9c/35/599c35990cd3e45ea07fc6111ebf0e63.jpg"
+                    alt="Second slide">
+                </div>
+                <div class="carousel-item ml-auto">
+                  <img class="d-block w-100"
+                    src="https://tattoodo-mobile-app.imgix.net/images/posts/20190812_8ImKSlW9XZOrogE.png?auto=format,compress&w=400"
+                    alt="Third slide">
+                </div>
+              </div>
+              <!--/.Slides-->
+              <!--Controls-->
+              <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!--/.Controls-->
+
+            </div>
+
+        <div class="map" style=" background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=5 Queensmill Road London SW6 6JP&zoom=13&scale=2&size=1000x1000&maptype=roadmap&markers=color:red%7C5 Queensmill Road London SW6 6JP&key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="sticky" style="padding-top: 150px; margin-top: -70px">
+      <div class="card card-cascade wider mb-4">
+
+      <!--Card image-->
+        <img src="<%= @personality.name %>" class="card-img-top profile-img">
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      <!--/Card image-->
+
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center">
+        <!--Title-->
+        <br><br><br><br><br>
+        <h2 class="card-title"><strong><%= @personality.name %></strong></h2>
+        <h3><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> </h3>
+            <br>
+        <p class="card-text">  <%= @personality.description %>
+        </p>
+
+      </div>
+
+      <div class="flat-show-card">
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> by Bonza
+  </div>
+</div>
+
+</div>
