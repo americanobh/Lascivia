@@ -17,6 +17,6 @@ class PersonalityTypesController < ApplicationController
   end
 
   def find_personality
-    @personality = PersonalityType.find(params[:id])
+    @personality = PersonalityType.find(1)
   end
 end

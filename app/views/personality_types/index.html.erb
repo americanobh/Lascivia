@@ -106,13 +106,13 @@
       <div class="content-center">
         <div class="row row-grid justify-content-between align-items-center text-left">
           <div class="col-lg-6 col-md-6">
-            <h1 class="text-white">We keep your coin
+            <h1 class="text-white">A sua personalidade é:
               <br/>
-              <span class="text-white">secured</span>
+              <span class="text-white"><%= @personality.find(1).name  %></span>
             </h1>
-            <p class="text-white mb-3">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel...</p>
+            <p class="text-white mb-3"><%= @personality.find(1).description %></p>
             <div class="btn-wrapper mb-3">
-              <p class="category text-success d-inline">From 9.99%/mo</p>
+              <p class="category text-success d-inline">Ler mais sobre minha personalidade</p>
               <a href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
             </div>
 
@@ -132,7 +132,7 @@
           </div>
 
           <div class="col-lg-4 col-md-5">
-            <img src="../assets/img/etherum.png" alt="Circle image" class="img-fluid">
+            <img src="../assets/img/valente.png" alt="Circle image" class="img-fluid">
           </div>
 
         </div>
