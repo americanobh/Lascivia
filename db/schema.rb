@@ -55,11 +55,9 @@ ActiveRecord::Schema.define(version: 2020_05_30_174640) do
     t.bigint "personality_type_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "user_id"
-    t.string "photos"
+    t.string "photo"
     t.index ["category_id"], name: "index_products_on_category_id"
     t.index ["personality_type_id"], name: "index_products_on_personality_type_id"
-    t.index ["user_id"], name: "index_products_on_user_id"
   end
 
   create_table "survey_questions", force: :cascade do |t|
@@ -92,7 +90,6 @@ ActiveRecord::Schema.define(version: 2020_05_30_174640) do
   add_foreign_key "orders", "users"
   add_foreign_key "products", "categories"
   add_foreign_key "products", "personality_types"
-  add_foreign_key "products", "users"
   add_foreign_key "survey_questions", "personality_types"
   add_foreign_key "users", "personality_types"
 end
