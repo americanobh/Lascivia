@@ -108,9 +108,9 @@
           <div class="col-lg-6 col-md-6">
             <h1 class="text-white">A sua personalidade é:
               <br/>
-              <span class="text-white"><%= @personality.find(1).name  %></span>
+              <span class="text-white"><%= @personality.first.name  %></span>
             </h1>
-            <p class="text-white mb-3"><%= @personality.find(1).description %></p>
+            <p class="text-white mb-3"><%= @personality.first.description %></p>
             <div class="btn-wrapper mb-3">
               <p class="category text-success d-inline">Ler mais sobre</p>
               <a href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>

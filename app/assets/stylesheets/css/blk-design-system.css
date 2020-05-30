@@ -3622,7 +3622,7 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
-.navbar {
+.navbar{
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3634,8 +3634,7 @@ input[type="button"].btn-block {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.625rem 0.9375rem; }
+          justify-content: space-between;}
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;

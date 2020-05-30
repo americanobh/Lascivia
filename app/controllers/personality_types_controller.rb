@@ -3,7 +3,7 @@ class PersonalityTypesController < ApplicationController
     before_action :find_personality, only: %i[show]
 
   def index
-    @personality = PersonalityType.all
+    @personalities = PersonalityType.all
   end
 
 
@@ -17,6 +17,6 @@ class PersonalityTypesController < ApplicationController
   end
 
   def find_personality
-    @personality = PersonalityType.find(1)
+    @personality = PersonalityType.first
   end
 end
