@@ -3,14 +3,14 @@
   <div class="search-bar d-flex flex-row justify-content-around">
 
 
-    <i id="search-icon" class="fa fa-search"></i>
-    <%= form_tag products_path, method: :get do %>
+<!--     <i id="search-icon" class="fa fa-search"></i>
+ -->    <%= form_tag products_path, id: "search-form", method: :get do %>
       <%= text_field_tag :query,
         params[:query],
         class: "form-control",
         placeholder: "search",
-        id: "search-form"
-      %> <br>
+        id: "search-input"
+      %>
       <%= submit_tag "Search", class: "btn btn-warning" %>
     <% end %>
     <!-- the list of products -->
