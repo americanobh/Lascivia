@@ -3,14 +3,14 @@ const search = document.getElementById('search-form')
 search.addEventListener('keyup', (event) => {
  const keyword = event.target.value;
  console.log(keyword);
-  fetch(`https://localhost:3000=?${keyword}`)
-    .then(response => response.json())
-    .then((data) => {
-      console.log(data);
-      // data.words.forEach((result) => {
+  // fetch(`https://localhost:3000=?${keyword}`)
+  //   .then(response => response.json())
+  //   .then((data) => {
+  //     console.log(data);
+  //     // data.words.forEach((result) => {
 
-      // });
-    });
+  //     // });
+  //   });
 });
 
 // FAZER CHAMADA AJAX FETCH DATA
