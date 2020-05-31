@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.6.5'
 
-gem 'bootsnap', require: false
+gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootstrap', '~> 4.3.1'
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
