@@ -1,9 +1,22 @@
+
 <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
 </script>
 <script>
     (function () {
+                  localStorage.removeItem('blipSdkUAccount');
         window.onload = function () {
-          localStorage.removeItem('blipSdkUAccount');
+
+          var customStyle = `#message-input {
+              box-sizing: border-box;
+              border: 1px solid #0CC8CC;
+              border-radius: 6px;
+              background: #252B39;
+            }
+            #message-input textarea {
+              background: #252B39;
+              font-size: 12px;
+              color: white;
+            }`
             new BlipChat()
             .withAppKey('c29maWExNjpjOTIwM2ZkYy0xNjY0LTQxODItYjA5Ny03YzNmMzQzODRjMzM=')
             .withButton({"color":"#f9679e","icon":""})
