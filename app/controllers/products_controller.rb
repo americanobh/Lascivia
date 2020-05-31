@@ -2,7 +2,19 @@ class ProductsController < ApplicationController
   before_action :find_product, only: %i[show edit update destroy]
 
   def index
-    @products = Product.all
+    if params[:query].present?
+
+       sql_query = " \
+        products.name @@ :query \
+        OR products.description @@ :query \
+        OR personality_types.name @@ :query \
+        OR personality_types.description @@ :query \
+      "
+        # OR categories.name ILIKE :query \
+      @products = Product.joins(:personality_type).where(sql_query, query: "%#{params[:query]}%")
+    else
+      @products = Product.all
+    end
   end
 
   def new

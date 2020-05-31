@@ -1,0 +1,22 @@
+<div class="container">
+  <h1><%= @kw %></h1>
+  <div class="search-bar d-flex flex-row justify-content-around">
+
+
+<!--     <i id="search-icon" class="fa fa-search"></i>
+ -->    <%= form_tag products_path, id: "search-form", method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "search",
+        id: "search-input"
+      %>
+      <%= submit_tag "Search", class: "btn btn-warning rounded" %>
+    <% end %>
+    <!-- the list of products -->
+
+
+  </div>
+</div>
+
+<!-- [...] -->

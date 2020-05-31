@@ -36,3 +36,6 @@ gem 'create_api_gem', git: 'https://github.com/Typeform/create-api-gem.git'
 
 # DOT ENV TOKENS
 gem 'dotenv-rails'
+
+# TURBOLINKS
+gem 'turbolinks', '~> 5'
