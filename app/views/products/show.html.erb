@@ -1,6 +1,9 @@
 <div class="container">
 
-  <p>Bem vindo @product.user.first_name, <br> baseado no seu Tipo de Personalidade
+  <h1>R$ <%= @product.price.to_i %> - <%= @product.name %></h1>
+  <img src="../images/anal-plug.jpg" alt="anal-plug" id="product-image">
+  <p>Bem vindo <%#= @product.user.first_name %>, <br> baseado no seu Tipo de Personalidade
+
     <strong><%= @product.personality_type.name %></strong>,
     nós da Lascívia, <br> recomendamos os produtos da Categoria
     <strong><%= @product.category.name %></strong> para você se divertir!
