@@ -1,5 +1,5 @@
 class PersonalityTypesController < ApplicationController
-
+    skip_before_action :authenticate_user!, only: [:show]
     before_action :find_personality, only: %i[show]
 
   def index
