@@ -24,13 +24,13 @@
   </head>
   <body>
     <%= render 'partials/navbar' %>
+    <%= render 'partials/searchbar' %>
     <%= render 'partials/chatbot' %>
     <%= render 'shared/flashes' %>
 
 
     <%= yield %>
-
-    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
     <!-- Core -->
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
