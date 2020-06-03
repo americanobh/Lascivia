@@ -1,5 +1,5 @@
 class PersonalityTypesController < ApplicationController
-    skip_before_action :authenticate_user!, only: [:show]
+    skip_before_action :authenticate_user!, only: [:show, :valente]
     before_action :find_personality, only: %i[show]
 
   def index
@@ -8,6 +8,8 @@ class PersonalityTypesController < ApplicationController
 
 
   def show; end
+
+  def valente; end
 
 
   private

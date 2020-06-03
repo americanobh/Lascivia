@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get '/survey', to: 'pages#survey'
+  get '/valente', to: 'personality_types#valente'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
