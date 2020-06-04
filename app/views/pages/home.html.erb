@@ -1,4 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
     <%= render 'partials/searchbar' %>
+<head>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="carousel" data-flickity>
+      <% @products.each do |product| %>
+      <div class="carousel-cell">
+
+      </div>
+      <% end %>
+    </div>
+
+
+  </div>
+</body>
