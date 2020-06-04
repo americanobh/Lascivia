@@ -1,11 +1,24 @@
-    <%= render 'partials/searchbar' %>
 <head>
-
+<title>Lascivia</title>
+<link rel="app/assets/stylesheets/pages/_home.scss" href="">
 </head>
 
 <body>
+  <div class="banner">
+    <h1>Lascivia</h1>
+    <%= render 'partials/searchbar' %>
+  </div>
   <div class="container">
-    <div class="carousel-products" data-flickity>
+    <!--
+    <div class="carousel-categories" data-flickity='{ "groupCells": true }'>
+      <% Category.all.each do |category| %>
+      <div class="category">
+        <%= category.name %>
+      </div>
+      <% end %>
+    </div>
+      -->
+    <div class="carousel-products" data-flickity='{ "groupCells": true }'>
       <% Product.all.each do |product| %>
         <div class="carousel-cell">
             <%= link_to product_path(product) do %>
@@ -28,5 +41,4 @@
       <% end %>
     </div>
   </div>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
