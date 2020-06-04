@@ -1,7 +1,7 @@
 .cart-card {
   width: 75%;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 200px;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.6);
   position: center;
@@ -24,12 +24,17 @@
 }
 
 #cart-form {
-  padding-top: 30px;
+  padding: 0;
 }
 
 #final-form {
-  padding-top: 20px;
-  text-align: left;
+  padding: 0;
+  padding-top: 30px;
   margin: 0;
+  text-align: left;
   margin-left: 64px;
+}
+
+#ftr {
+  padding: 0;
 }
