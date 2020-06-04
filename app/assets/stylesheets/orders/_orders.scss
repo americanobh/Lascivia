@@ -1,9 +1,10 @@
 .cart-card {
-  width: 100%;
+  width: 75%;
   background-color: white;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.6);
+  position: center;
 }
 
 .order-item-side {
@@ -20,4 +21,15 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
   font-size: 14px;
+}
+
+#cart-form {
+  padding-top: 30px;
+}
+
+#final-form {
+  padding-top: 20px;
+  text-align: left;
+  margin: 0;
+  margin-left: 64px;
 }
