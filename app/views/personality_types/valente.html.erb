@@ -101,39 +101,39 @@
             color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
         -->
                   <li class="nav-item">
-                      <a class="nav-link" href="#bullets" role="tab" data-toggle="tab">
+                      <button class="nav-link" href="#Bullets" role="tab" data-toggle="tab" >
                           <i class="tim-icons icon-laptop"></i>
                           Bullets
-                      </a>
+                      </button>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link active" href="#clits" role="tab" data-toggle="tab">
+                      <button class="nav-link active" href="#Rabbits" role="tab" data-toggle="tab">
                           <i class="tim-icons icon-settings-gear-63"></i>
-                          Clits
-                      </a>
+                          Rabbits
+                      </button>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#kits" role="tab" data-toggle="tab">
+                      <button class="nav-link" href="#Kits" role="tab" data-toggle="tab">
                           <i class="tim-icons icon-calendar-60"></i>
                           Kits
-                      </a>
+                      </button>
                   </li>
               </ul>
               <div class="tab-content tab-space col-12">
-                  <div class="tab-pane active" id="bullets">
+                  <div class="tab-pane active" id="Bullets">
                     <br><br><br><br><br>
                     <!-- cards de produtos BULLETS -->
                     <div class="row">
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img/toys/BULLET_POWER_RECARREGAVEL_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/golfin.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
                                 <h4 class="text-uppercase">Vibrador Dolphin </h4>
-                                <span>+ silencioso</span>
+                                <span>+ Silencioso</span>
                                 <hr class="line-primary">
                               </div>
                             </div>
@@ -146,20 +146,20 @@
                             </div>
                           </div>
                           <div class="card-footer text-center">
-                            <button class="btn btn-primary btn-simple">Quero esse!</button>
+                           <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img/toys/Vibrador_Bud_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/power.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
                                 <h4 class="text-uppercase">Vibrador Bullet Power</h4>
-                                <span>+ potente</span>
+                                <span>+ Transportável</span>
                                 <hr class="line-success">
                               </div>
                             </div>
@@ -179,13 +179,13 @@
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img//toys/Vibrador_Caesar_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img//toys/bud.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
                                 <h4 class="text-uppercase">Vibrador Massageador BUD</h4>
-                                <span>+ utilidades</span>
+                                <span>+ Estímulo de clit</span>
                                 <hr class="line-info">
                               </div>
                             </div>
@@ -204,28 +204,28 @@
                       </div>
                     </div>
                   </div>
-<div class="tab-pane active" id="clits">
+<div class="tab-pane active" id="Rabbits">
                     <br><br><br><br><br>
-                    <!-- cards de produtos BULLETS -->
+                    <!-- cards de produtos rabbits-->
                     <div class="row">
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img/toys/vibrador_carnon_rosa_3_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/mini.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
-                                <h4 class="text-uppercase">CANON</h4>
-                                <span>Iniciate</span>
+                                <h4 class="text-uppercase">Mini Rabbit</h4>
+                                <span>+ Compacto</span>
                                 <hr class="line-primary">
                               </div>
                             </div>
                             <div class="row">
                               <ul class="list-group">
+                                <li class="list-group-item">R$ 99.80</li>
+                                <li class="list-group-item">Pequeno</li>
                                 <li class="list-group-item">Silencioso</li>
-                                <li class="list-group-item">Escondível/li>
-                                <li class="list-group-item">Perfeito</li>
                               </ul>
                             </div>
                           </div>
@@ -237,70 +237,71 @@
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img/toys/Vibrador_Multivelocidade_Dolphin_3_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/conrol.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
-                                <h4 class="text-uppercase">DOLPHIN MULTIPLE</h4>
-                                <span>Medium</span>
+                                <h4 class="text-uppercase">Rabbit Canrol</h4>
+                                <span>+ Estímulo de clit</span>
                                 <hr class="line-success">
                               </div>
                             </div>
                             <div class="row">
                               <ul class="list-group">
-                                <li class="list-group-item">150 messages</li>
-                                <li class="list-group-item">1000 emails</li>
-                                <li class="list-group-item">24/7 Support</li>
+                                <li class="list-group-item">R$ 322.60</li>
+                                <li class="list-group-item">Textura Granular</li>
+                                <li class="list-group-item">7 modos de vibração</li>
                               </ul>
                             </div>
                           </div>
                           <div class="card-footer text-center">
-                            <button class="btn btn-success btn-simple">Get plan</button>
+                            <button class="btn btn-success btn-simple">Quero o meu!</button>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img//toys/vibrador_personal_rosa_2_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img//toys/grandao.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
-                                <h4 class="text-uppercase">PERSONAL VIBRATOR</h4>
-                                <span>expert</span>
+                                <h4 class="text-uppercase">Rabbit Shmilly</h4>
+                                <span>+ Potencia</span>
                                 <hr class="line-info">
                               </div>
                             </div>
                             <div class="row">
                               <ul class="list-group">
-                                <li class="list-group-item">350 messages</li>
-                                <li class="list-group-item">10K emails</li>
-                                <li class="list-group-item">24/7 Support</li>
+                                <li class="list-group-item">R$ 279.80</li>
+                                <li class="list-group-item">Giratório</li>
+                                <li class="list-group-item">Dois motores</li>
                               </ul>
                             </div>
                           </div>
                           <div class="card-footer text-center">
-                            <button class="btn btn-info btn-simple">Get plan</button>
+                            <button class="btn btn-info btn-simple">Quero o meu!</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                                    <div class="tab-pane active" id="kits">
+                  <div class="tab-pane active" id="Kits">
                     <br><br><br><br><br>
                     <!-- cards de produtos BULLETS -->
                     <div class="row">
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img/toys/BULLET_POWER_RECARREGAVEL_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/kittt.jpg" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
-                                <h4 class="text-uppercase">Mini Bullet</h4>
+                                <br>
+                                <h4 class="text-uppercase">Starter Pack</h4>
                                 <span>Iniciate</span>
                                 <hr class="line-primary">
                               </div>
@@ -321,7 +322,7 @@
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img/toys/Vibrador_Bud_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/kitt.png" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
@@ -340,14 +341,14 @@
                             </div>
                           </div>
                           <div class="card-footer text-center">
-                            <button class="btn btn-success btn-simple">Get plan</button>
+                            <button class="btn btn-success btn-simple">Quero o meu!</button>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
-                            <img src="../assets/img//toys/Vibrador_Caesar_1_1024x1024.jpg" class="img-center img-fluid">
+                            <img src="../assets/img/toys/kit.png" class="img-center img-fluid">
                           </div>
                           <div class="card-body">
                             <div class="row">
@@ -366,7 +367,7 @@
                             </div>
                           </div>
                           <div class="card-footer text-center">
-                            <button class="btn btn-info btn-simple">Get plan</button>
+                            <button class="btn btn-info btn-simple">Quero o meu!</button>
                           </div>
                         </div>
                       </div>
@@ -382,306 +383,6 @@
     </section>
 
 
-
-      <section class="section">
-        <img src="../assets/img/path4.png" class="path">
-        <div class="container">
-          <div class="row row-grid justify-content-between">
-            <div class="col-md-5 mt-lg-5">
-              <div class="row">
-                <div class="col-lg-6 col-sm-12 px-2 py-2">
-                  <div class="card card-stats ">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5 col-md-4">
-                          <div class="icon-big text-center icon-warning">
-                            <i class="tim-icons icon-trophy text-warning"></i>
-                          </div>
-                        </div>
-                        <div class="col-7 col-md-8">
-                          <div class="numbers">
-                            <p class="card-title">3,237
-                              <p>
-                                <p class="card-category">Awards</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-sm-12 px-2 py-2">
-                  <div class="card card-stats upper bg-default">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5 col-md-4">
-                          <div class="icon-big text-center icon-warning">
-                            <i class="tim-icons icon-coins text-white"></i>
-                          </div>
-                        </div>
-                        <div class="col-7 col-md-8">
-                          <div class="numbers">
-                            <p class="card-title">3,653
-                              <p>
-                                <p class="card-category">Commits</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 col-sm-12 px-2 py-2">
-                  <div class="card card-stats ">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5 col-md-4">
-                          <div class="icon-big text-center icon-warning">
-                            <i class="tim-icons icon-gift-2 text-info"></i>
-                          </div>
-                        </div>
-                        <div class="col-7 col-md-8">
-                          <div class="numbers">
-                            <p class="card-title">593
-                              <p>
-                                <p class="card-category">Presents</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-sm-12 px-2 py-2">
-                  <div class="card card-stats ">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5 col-md-4">
-                          <div class="icon-big text-center icon-warning">
-                            <i class="tim-icons icon-credit-card text-success"></i>
-                          </div>
-                        </div>
-                        <div class="col-7 col-md-8">
-                          <div class="numbers">
-                            <p class="card-title">10,783
-                              <p>
-                                <p class="card-category">Forks</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="pl-md-5">
-                <h1>Large
-                  <br/>Achivements</h1>
-                <p>I should be capable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. </p>
-                <br/>
-                <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray.</p>
-                <br/>
-                <a href="#" class="font-weight-bold text-info mt-5">Show all <i class="tim-icons icon-minimal-right text-info"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <section class="section section-lg section-safe">
-      <img src="../assets/img/path5.png" class="path">
-      <div class="container">
-        <div class="row row-grid justify-content-between">
-          <div class="col-md-5">
-            <img src="../assets/img/chester-wade.jpg" class="img-fluid floating">
-            <div class="card card-stats bg-danger">
-              <div class="card-body">
-                <div class="justify-content-center">
-                  <div class="numbers">
-                    <p class="card-title">100%</p>
-                    <p class="card-category text-white">Safe</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card card-stats bg-info">
-              <div class="card-body">
-                <div class="justify-content-center">
-                  <div class="numbers">
-                    <p class="card-title">573 K</p>
-                    <p class="card-category text-white">Satisfied customers</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card card-stats bg-default">
-              <div class="card-body">
-                <div class="justify-content-center">
-                  <div class="numbers">
-                    <p class="card-title">10 425</p>
-                    <p class="card-category text-white">Business</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="px-md-5">
-              <hr class="line-success">
-              <h3>Awesome features</h3>
-              <p>The design system comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-              <ul class="list-unstyled mt-5">
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div class="icon icon-success mb-2">
-                      <i class="tim-icons icon-vector"></i>
-                    </div>
-                    <div class="ml-3">
-                      <h6>Carefully crafted components</h6>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div class="icon icon-success mb-2">
-                      <i class="tim-icons icon-tap-02"></i>
-                    </div>
-                    <div class="ml-3">
-                      <h6>Amazing page examples</h6>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div class="icon icon-success mb-2">
-                      <i class="tim-icons icon-single-02"></i>
-                    </div>
-                    <div class="ml-3">
-                      <h6>Super friendly support team</h6>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-lg">
-      <img src="../assets/img/path4.png" class="path">
-      <img src="../assets/img/path2.png" class="path2">
-      <div class="col-md-12">
-        <div class="card card-chart card-plain">
-          <div class="card-header">
-            <div class="row">
-              <div class="col-sm-6 text-left">
-                <hr class="line-primary">
-                <h5 class="card-category">Total Investments</h5>
-                <h2 class="card-title">Performance</h2>
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="chartBig"></canvas>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-lg section-coins">
-      <img src="../assets/img/path3.png" class="path">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <hr class="line-info">
-            <h1>Choose the coin
-              <span class="text-info">that fits your needs</span>
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-coin card-plain">
-              <div class="card-header">
-                <img src="../assets/img/bitcoin.png" class="img-center img-fluid">
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h4 class="text-uppercase">Light Coin</h4>
-                    <span>Plan</span>
-                    <hr class="line-primary">
-                  </div>
-                </div>
-                <div class="row">
-                  <ul class="list-group">
-                    <li class="list-group-item">50 messages</li>
-                    <li class="list-group-item">100 emails</li>
-                    <li class="list-group-item">24/7 Support</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-footer text-center">
-                <button class="btn btn-primary btn-simple">Get plan</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-coin card-plain">
-              <div class="card-header">
-                <img src="../assets/img/etherum.png" class="img-center img-fluid">
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h4 class="text-uppercase">Dark Coin</h4>
-                    <span>Plan</span>
-                    <hr class="line-success">
-                  </div>
-                </div>
-                <div class="row">
-                  <ul class="list-group">
-                    <li class="list-group-item">150 messages</li>
-                    <li class="list-group-item">1000 emails</li>
-                    <li class="list-group-item">24/7 Support</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-footer text-center">
-                <button class="btn btn-success btn-simple">Get plan</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-coin card-plain">
-              <div class="card-header">
-                <img src="../assets/img/ripp.png" class="img-center img-fluid">
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h4 class="text-uppercase">Bright Coin</h4>
-                    <span>Plan</span>
-                    <hr class="line-info">
-                  </div>
-                </div>
-                <div class="row">
-                  <ul class="list-group">
-                    <li class="list-group-item">350 messages</li>
-                    <li class="list-group-item">10K emails</li>
-                    <li class="list-group-item">24/7 Support</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-footer text-center">
-                <button class="btn btn-info btn-simple">Get plan</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="footer">
       <div class="container">
         <div class="row">

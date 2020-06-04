@@ -74,5 +74,26 @@ product = Product.create!([
         description: " O Vibrador Rabbit Freda é um clássico que toda mana deveria ter! Os rabbits são os melhores amigos da ppk, porque contam com dois motores: um para estimular o canal vaginal e outro para estimular o... ",
         amount: 1, category: category[2],
         photo: "https://cdn.shopify.com/s/files/1/2110/6921/products/VIBRADORRABBITFREDA3_1024x1024.jpg?v=1589678896",
-        personality_type: personality}
+        personality_type: personality},
+
+                        {name: "Vibrador Personal Multivelocidade",
+        price: 118.5,
+        description: " Quer um vibrador básico, que alinhe forma e função? O Vibrador Personal Multivelocidade é perfeito para você! Um vibrador de forma limpa e clássica, com controle de velocidade manual, 13 cms de pur... ",
+        amount: 1, category: category[2],
+        photo: "https://cdn.shopify.com/s/files/1/2110/6921/products/vibrador_personal_rosa_2_1024x1024.jpg?v=1542361042",
+        personality_type: personality},
+
+                        {name: "Vibrador Personal Multivelocidade",
+        price: 118.5,
+        description: " Quer um vibrador básico, que alinhe forma e função? O Vibrador Personal Multivelocidade é perfeito para você! Um vibrador de forma limpa e clássica, com controle de velocidade manual, 13 cms de pur... ",
+        amount: 1, category: category[2],
+        photo: "https://cdn.shopify.com/s/files/1/2110/6921/products/vibrador_personal_rosa_2_1024x1024.jpg?v=1542361042",
+        personality_type: personality},
+
+                        {name: "Vibrador Personal Multivelocidade",
+        price: 118.5,
+        description: " Quer um vibrador básico, que alinhe forma e função? O Vibrador Personal Multivelocidade é perfeito para você! Um vibrador de forma limpa e clássica, com controle de velocidade manual, 13 cms de pur... ",
+        amount: 1, category: category[2],
+        photo: "https://cdn.shopify.com/s/files/1/2110/6921/products/vibrador_personal_rosa_2_1024x1024.jpg?v=1542361042",
+        personality_type: personality},
         ])

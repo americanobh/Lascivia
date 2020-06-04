@@ -1,9 +1,14 @@
-  <nav class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top" color-on-scroll="100">
-    <div class="container">
+  <nav class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top" color-on-scroll="100" style="height: 80px;">
+    <div class="container" style="padding-bottom: 20px; padding-top: 20px;">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/blk-design-system-pro/index.html" data-toggle="tooltip" title="Pensamos 100% no seu Bem-estar" data-placement="bottom" target="_blank">
+        <%= link_to root_path, class: "navbar-brand" do %>
+        <a class="navbar-brand" href="http://localhost:3000/" data-toggle="tooltip" title="Pensamos 100% no seu Bem-estar" data-placement="bottom" target="_blank">
+          <%= image_tag "logo.png" %>
           <span>•Lascivia•</span>
         </a>
+    <% end %>
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar bar1"></span>
           <span class="navbar-toggler-bar bar2"></span>
@@ -57,27 +62,6 @@
               </a>
               <a class="dropdown-item" href="../sections.html#blogs">
                 <i class="tim-icons icon-align-left-2"></i> Blogs
-              </a>
-              <a class="dropdown-item" href="../sections.html#teams">
-                <i class="tim-icons icon-user-run"></i> Teams
-              </a>
-              <a class="dropdown-item" href="../sections.html#projects">
-                <i class="tim-icons icon-paper"></i> Projects
-              </a>
-              <a class="dropdown-item" href="../sections.html#pricing">
-                <i class="tim-icons icon-money-coins"></i> Pricing
-              </a>
-              <a class="dropdown-item" href="../sections.html#testimonials">
-                <i class="tim-icons icon-chat-33"></i> Testimonials
-              </a>
-              <a class="dropdown-item" href="../sections.html#contactus">
-                <i class="tim-icons icon-mobile"></i> Contact Us
-              </a>
-              <a class="dropdown-item" href="../sections.html#tables">
-                <i class="tim-icons icon-chart-bar-32"></i> Tables
-              </a>
-              <a class="dropdown-item" href="../sections.html#accordion">
-                <i class="tim-icons icon-paper"></i> Accordion
               </a>
             </div>
           </li>
