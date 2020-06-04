@@ -1,1 +1,75 @@
 // Specific CSS for your home-page
+
+/* external css: flickity.css */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+
+
+
+/* cell number */
+.carousel-cell:before {
+  text-align: center;
+}
+
+
+.carousel-cell {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #fd8294;
+  border-radius: 4px;
+  padding: 8px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  width: 200px;
+  margin-right: 12px;
+}
+
+.container {
+  padding: 60px;
+  align-content: center;
+}
+
+.carousel-cell:hover {
+  opacity: 0.7;
+}
+
+#photo {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.line {
+  border-top: 1px solid #fd8294;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  margin-left: 8;
+  color: black;
+}
+
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p {
+  font-family: 'Chivo', sans-serif;
+  font-size: 14px;
+  margin: 8px;
+  margin-left: 0;
+  color: black;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+
