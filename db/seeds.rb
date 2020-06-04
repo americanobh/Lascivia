@@ -27,27 +27,21 @@ category = Category.create!([
 )
 
 product = Product.create!([
-        {name: "Anal Plug",
-        price: 55.5,
-        description: "Its very fun !",
-        amount: 1, category: category[4],
-        personality_type: personality},
-
-        {name: "Vibrador Bullet Power Recarregável",
+        {name: "Vibrador Bullet Power",
         price: 118.5,
         description: "O Power Bullet é um vibrador discreto e pequeno, ideal para estimulação clitoriana! Super potente, e feito em silicone, este BB é recarregável e à prova d'água ! Perfeito para usar sozinha ou encaixada",
         amount: 1, category: category[0],
         photo: "https://cdn.shopify.com/s/files/1/2110/6921/products/BULLET_POWER_RECARREGAVEL_1_1024x1024.jpg?v=1575588872",
         personality_type: personality},
 
-                {name: "Vibrador Massageador Bullet BUD",
+                {name: "Vibrador Massageador",
         price: 178.5,
         description: "VERSÁTIL é a palavra chave para você escolher um sex toy? Então o Vibrador Massageador Bullet BUD é uma ótima opção para você. Este super potente bullet recarregável, pode ser utilizado de varias funções",
         amount: 1, category: category[0],
         photo: "https://cdn.shopify.com/s/files/1/2110/6921/products/Vibrador_Bud_1_1024x1024.jpg?v=1580317405",
         personality_type: personality},
 
-                {name: "Vibrador Dolphin G -Spot Multivelocidade",
+                {name: "Vibrador Dolphin G-Spot",
         price: 50.0,
         description: "O Power Bullet é um vibrador discreto e pequeno, ideal para estimulação clitoriana! Super potente, e feito em silicone, este BB é recarregável e à prova d'água ! Perfeito para usar sozinha ou encaixada",
         amount: 1, category: category[0],
