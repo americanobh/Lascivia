@@ -16,7 +16,10 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
+
 <body class="product-page">
+<br><br><br><br><br><br>
+
   <div class="section">
         <div class="container">
           <div class="row">
@@ -59,31 +62,31 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
-                  <p class="d-inline">(76 customer reviews)</p>
+                  <p class="d-inline">(76 consumidores votaram)</p>
                 </div>
               </div>
               <br/>
-              <h2 class="main-price"><%= @product.price.to_i %></h2>
-              <h5 class="category">Description</h5>
+              <h2 class="main-price">R$ <%= @product.price.to_i %>.00</h2>
+              <h5 class="category">Descrição:</h5>
               <p class="description"><%= @product.description %></p>
               <br>
               <div class="row pick-size">
                 <div class="col-lg-4 col-md-4">
-                  <label>Quantity</label>
+                  <label>Quantidade</label>
                   <div class="input-group">
                     <div class="input-group-btn">
-                      <button id="down" class="btn btn-warning btn-round btn-simple" onclick=" down('0')"><i class="tim-icons icon-simple-delete"></i></button>
+                      <button id="down" class="btn btn-warning btn-round btn-simple" onclick=" down('1')"><i class="tim-icons icon-simple-delete"></i></button>
                     </div>
                     <input type="text" id="myNumber" class="form-control input-number" value="1" />
                     <div class="input-group-btn">
-                      <button id="up" class="btn btn-warning btn-round btn-simple" onclick="up('100')"><i class="tim-icons icon-simple-add"></i></button>
+                      <button id="up" class="btn btn-warning btn-round btn-simple" onclick="up('1')"><i class="tim-icons icon-simple-add"></i></button>
                     </div>
                   </div>
                 </div>
               </div>
               <br>
               <div class="row justify-content-start">
-                 <%= link_to "Adicionar ao Carrinho", root_path, class: "btn btn-warning" %>
+                   <%= link_to "Adicionar ao Carrinho", order_items_path(product_id: @product.id), method: :post, class: "btn btn-warning" %>
               </div>
             </div>
           </div>
