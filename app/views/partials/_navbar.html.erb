@@ -1,9 +1,14 @@
   <nav class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top" color-on-scroll="100">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/blk-design-system-pro/index.html" data-toggle="tooltip" title="Pensamos 100% no seu Bem-estar" data-placement="bottom" target="_blank">
+        <%= link_to root_path, class: "navbar-brand" do %>
+        <a class="navbar-brand" href="http://localhost:3000/" data-toggle="tooltip" title="Pensamos 100% no seu Bem-estar" data-placement="bottom" target="_blank">
+          <%= image_tag "logo.png" %>
           <span>•Lascivia•</span>
         </a>
+    <% end %>
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-bar bar1"></span>
           <span class="navbar-toggler-bar bar2"></span>
