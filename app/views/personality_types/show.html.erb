@@ -91,7 +91,10 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-12">
-                <h1 class="text-center">Experiências recomendadas para você:</h1>
+                <h1 class="text-center"><strong><%= @personality.name %></strong>,
+    nós da Lascívia, <br> recomendamos as 3 categorias abaixo
+    <strong></strong> para você se divertir!
+  </p></h1>
                 <div class="row row-grid justify-content-center">
                   <ul class="nav nav-pills nav-pills-primary nav-pills-icons" role="tablist">
         <!--
@@ -586,100 +589,177 @@
         </div>
       </div>
     </section>
-    <section class="section section-lg section-coins">
-      <img src="../assets/img/path3.png" class="path">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <hr class="line-info">
-            <h1>Choose the coin
-              <span class="text-info">that fits your needs</span>
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-coin card-plain">
-              <div class="card-header">
-                <img src="../assets/img/bitcoin.png" class="img-center img-fluid">
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h4 class="text-uppercase">Light Coin</h4>
-                    <span>Plan</span>
-                    <hr class="line-primary">
+   <div class="row">
+                <div class="col-md-12">
+                  <h4>
+                    <small>Shopping Cart Table</small>
+                  </h4>
+                </div>
+                <div class="col-md-12">
+                  <div class="card  card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title"> Shopping Cart Table</h4>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table tablesorter  table-shopping" id="">
+                          <thead class="">
+                            <tr>
+                              <th class="text-center">
+                              </th>
+                              <th>
+                                Product
+                              </th>
+                              <th>
+                                Color
+                              </th>
+                              <th>
+                                Size
+                              </th>
+                              <th class="text-right">
+                                Price
+                              </th>
+                              <th class="text-right">
+                                Qty
+                              </th>
+                              <th class="text-right">
+                                Amount
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="img-container">
+                                  <img src="./assets/img/jacket.png" alt="...">
+                                </div>
+                              </td>
+                              <td class="td-name">
+                                <a href="#jacket">Suede Biker Jacket</a>
+                                <br />
+                                <small>by Saint Laurent</small>
+                              </td>
+                              <td>
+                                Black
+                              </td>
+                              <td>
+                                M
+                              </td>
+                              <td class="td-number">
+                                <small>€</small>3,390
+                              </td>
+                              <td class="td-number">
+                                1
+                                <div class="btn-group">
+                                  <button class="btn btn-info btn-sm"> <i class="tim-icons icon-simple-delete"></i> </button>
+                                  <button class="btn btn-info btn-sm"> <i class="tim-icons icon-simple-add"></i> </button>
+                                </div>
+                              </td>
+                              <td class="td-number">
+                                <small>€</small>549
+                              </td>
+                              <td class="td-actions">
+                                <button type="button" rel="tooltip" data-placement="left" title="Remove item" class="btn btn-link btn-danger">
+                                  <i class="tim-icons icon-simple-remove"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="img-container">
+                                  <img src="./assets/img/t-shirt.png" alt="...">
+                                </div>
+                              </td>
+                              <td class="td-name">
+                                <a href="#pants">Jersey T-Shirt</a>
+                                <br />
+                                <small>by Balmain</small>
+                              </td>
+                              <td>
+                                Black
+                              </td>
+                              <td>
+                                M
+                              </td>
+                              <td class="td-number">
+                                <small>€</small>499
+                              </td>
+                              <td class="td-number">
+                                2
+                                <div class="btn-group">
+                                  <button class="btn btn-info btn-sm"> <i class="tim-icons icon-simple-delete"></i> </button>
+                                  <button class="btn btn-info btn-sm"> <i class="tim-icons icon-simple-add"></i> </button>
+                                </div>
+                              </td>
+                              <td class="td-number">
+                                <small>€</small>998
+                              </td>
+                              <td class="td-actions">
+                                <button type="button" rel="tooltip" data-placement="left" title="Remove item" class="btn btn-link btn-danger">
+                                  <i class="tim-icons icon-simple-remove"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="img-container">
+                                  <img src="./assets/img/gucci.png" alt="...">
+                                </div>
+                              </td>
+                              <td class="td-name">
+                                <a href="#nothing">Slim-Fit Swim Short</a>
+                                <br />
+                                <small>by Prada</small>
+                              </td>
+                              <td>
+                                Red
+                              </td>
+                              <td>
+                                M
+                              </td>
+                              <td class="td-number">
+                                <small>€</small>200
+                              </td>
+                              <td class="td-number">
+                                1
+                                <div class="btn-group">
+                                  <button class="btn btn-info btn-sm"> <i class="tim-icons icon-simple-delete"></i> </button>
+                                  <button class="btn btn-info btn-sm"> <i class="tim-icons icon-simple-add"></i> </button>
+                                </div>
+                              </td>
+                              <td class="td-number">
+                                <small>€</small>799
+                              </td>
+                              <td class="td-actions">
+                                <button type="button" rel="tooltip" data-placement="left" title="Remove item" class="btn btn-link btn-danger">
+                                  <i class="tim-icons icon-simple-remove"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="3">
+                              </td>
+                              <td class="td-total">
+                                Total
+                              </td>
+                              <td class="td-price">
+                                <small>€</small>2,346
+                              </td>
+                              <td colspan="3" class="text-right">
+                                <button type="button" rel="tooltip" class="btn btn-info btn-round ">
+                                  Complete Purchase
+                                  <i class="tim-icons icon-minimal-right"></i>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <ul class="list-group">
-                    <li class="list-group-item">50 messages</li>
-                    <li class="list-group-item">100 emails</li>
-                    <li class="list-group-item">24/7 Support</li>
-                  </ul>
-                </div>
               </div>
-              <div class="card-footer text-center">
-                <button class="btn btn-primary btn-simple">Get plan</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-coin card-plain">
-              <div class="card-header">
-                <img src="../assets/img/etherum.png" class="img-center img-fluid">
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h4 class="text-uppercase">Dark Coin</h4>
-                    <span>Plan</span>
-                    <hr class="line-success">
-                  </div>
-                </div>
-                <div class="row">
-                  <ul class="list-group">
-                    <li class="list-group-item">150 messages</li>
-                    <li class="list-group-item">1000 emails</li>
-                    <li class="list-group-item">24/7 Support</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-footer text-center">
-                <button class="btn btn-success btn-simple">Get plan</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-coin card-plain">
-              <div class="card-header">
-                <img src="../assets/img/ripp.png" class="img-center img-fluid">
-              </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-12 text-center">
-                    <h4 class="text-uppercase">Bright Coin</h4>
-                    <span>Plan</span>
-                    <hr class="line-info">
-                  </div>
-                </div>
-                <div class="row">
-                  <ul class="list-group">
-                    <li class="list-group-item">350 messages</li>
-                    <li class="list-group-item">10K emails</li>
-                    <li class="list-group-item">24/7 Support</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-footer text-center">
-                <button class="btn btn-info btn-simple">Get plan</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
+            </div>    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
