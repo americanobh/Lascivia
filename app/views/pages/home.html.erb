@@ -5,14 +5,28 @@
 
 <body>
   <div class="container">
-    <div class="carousel" data-flickity>
-      <% @products.each do |product| %>
-      <div class="carousel-cell">
-
-      </div>
+    <div class="carousel-products" data-flickity>
+      <% Product.all.each do |product| %>
+        <div class="carousel-cell">
+          <%= link_to product_path(product) do %>
+            <% if product.photo.present? %>
+              <%= image_tag product.photo, id: "photo" %>
+            <% else %>
+              <%= image_tag "" %>
+            <% end %>
+          <% end %>
+          <hr class="line">
+          <div class="title">
+            <h3><%= product.name.upcase %></h3>
+          </div>
+          <hr class="line">
+          <div class="infos">
+            <p><%= product.category.name %></p>
+            <p><%= product.price %></p>
+          </div>
+        </div>
       <% end %>
     </div>
-
-
   </div>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
