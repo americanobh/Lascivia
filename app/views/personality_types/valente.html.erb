@@ -37,14 +37,14 @@
             <h4 class="text-white mb-3">As valentes vivem num mundo colorido e sensual, inspirado através das conexões com pessoas e ideias. As personalidades Valentes têm alegria em reinterpretar essas conexões, reinventando e experimentando com si próprias e novas perspectivas. Nenhum outro tipo de personalidade explora e experimenta dessa maneira. Isso cria uma sensação de espontaneidade, fazendo os Aventureiros parecerem imprevisíveis, mesmo com seus amigos e entes queridos.</h4>
             <div class="btn-wrapper mb-3">
               <p class="category text-success d-inline">Saber mais sobre</p>
-              <a href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
+              <button href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
             </div>
             <div class="btn-wrapper">
               <div class="button-container">
 
-                <button type="button" href="itens" class="btn btn-primary btn-fab btn-icon btn-round pulse btn-lg">
+                <a href="#itens" class="btn btn-primary btn-round pulse btn-fab">
                   <i class="tim-icons icon-minimal-down"></i>
-                </button>
+                </a>
 
               </div>
             </div>
@@ -56,16 +56,16 @@
       </div>
     </div>
 
-    <section class="section section-lg">
-        <section class="section section-lg">
+    <section id="itens" class="section section-lg">
 
           <div class="container">
             <div class="row justify-content-center">
-              <div id="itens" class="col-lg-12">
+              <div  class="col-lg-12">
                 <h1 class="text-center"><strong>Valente</strong>,
     nós da Lascívia, <br> recomendamos as 3 categorias abaixo
     <strong></strong> para você se divertir!
     </p></h1>
+    <br>
                 <div class="row row-grid justify-content-center">
                   <ul class="nav nav-pills nav-pills-primary nav-pills-icons" role="tablist">
         <!--
@@ -73,26 +73,26 @@
         -->
                   <li class="nav-item">
                       <a class="nav-link" href="#Bullets" role="tab" data-toggle="tab" >
-                          <i class="tim-icons icon-laptop"></i>
+                          <%= image_tag "q3.png", width: "40px" %><br><br>
                           Bullets
                       </a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link active" href="#Rabbits" role="tab" data-toggle="tab">
-                          <i class="tim-icons icon-settings-gear-63"></i>
+                          <%= image_tag "q2.png", width: "40px" %><br><br>
                           Rabbits
                       </a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#Kits" role="tab" data-toggle="tab">
-                          <i class="tim-icons icon-calendar-60"></i>
+                          <%= image_tag "q1.png", width: "40px" %><br><br>
                           Kits
                       </a>
                   </li>
               </ul>
               <div class="tab-content tab-space col-12">
                   <div class="tab-pane active" id="Bullets">
-                    <br><br><br><br><br>
+                    <br><br><br><br>
                     <!-- cards de produtos BULLETS -->
                     <div class="row">
                       <div class="col-md-4">
@@ -351,7 +351,7 @@
             </div>
           </div>
         </section>
-    </section>
+
 
 
     <footer class="footer">
