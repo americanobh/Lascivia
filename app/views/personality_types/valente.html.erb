@@ -90,13 +90,16 @@
                       </a>
                   </li>
               </ul>
-              <div class="tab-content tab-space col-12">
+                <div class="tab-content tab-space col-12">
                   <div class="tab-pane active" id="Bullets">
                     <br><br><br><br>
                     <!-- cards de produtos BULLETS -->
                     <div class="row">
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="flip-card">
+<div class="flip-card-inner">
+                        <div class="card card-coin card-plain flip-card-front">
+
                           <div class="card-header">
                             <img src="../assets/img/toys/golfin.jpg" class="img-center img-fluid">
                           </div>
@@ -120,7 +123,16 @@
                            <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
                           </div>
                         </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+</div>
+                        </div>
+
                       </div>
+
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
@@ -351,7 +363,6 @@
             </div>
           </div>
         </section>
-
 
 
     <footer class="footer">
