@@ -483,6 +483,15 @@ h6,
   line-height: 1.2;
 }
 
+.zucher-font {
+  color: #1e1e2f;
+}
+
+.zukaia-font {
+  color: #1e1e24;
+}
+
+
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
