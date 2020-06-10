@@ -4,24 +4,20 @@
 </script>
 <script>
     (function () {
-                  localStorage.removeItem('blipSdkUAccount');
+        localStorage.removeItem('blipSdkUAccount');
         window.onload = function () {
 
-          var customStyle = `#message-input {
-              box-sizing: border-box;
-              border: 1px solid #0CC8CC;
-              border-radius: 6px;
-              background: #252B39;
-            }
-            #message-input textarea {
-              background: #252B39;
-              font-size: 12px;
-              color: white;
+          var customStyle = `
+            #blip-chat-container {
+              height: 100% !important;
+              bottom: 0 !important;
+              right: 0 !important;
             }`
             new BlipChat()
             .withAppKey('c29maWExNjpjOTIwM2ZkYy0xNjY0LTQxODItYjA5Ny03YzNmMzQzODRjMzM=')
             .withButton({"color":"#f9679e","icon":""})
             .withCustomCommonUrl('https://chat.blip.ai/')
+            .withCustomStyle(customStyle)
             .build();
         }
     })();

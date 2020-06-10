@@ -12,9 +12,10 @@ import "chartjs";
 import "moment";
 import "bootstrap-datetimepicker";
 import "demo";
-import "blk-design-system-pro";
+
 
 
 
 // document.addEventListener('turbolinks:load', () => {
+//   import "blk-design-system-pro";
 // });
