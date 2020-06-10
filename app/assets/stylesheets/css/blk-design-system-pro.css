@@ -11456,7 +11456,7 @@ a.text-success:focus {
 }
 
 .text-info {
-  color: #1d8cf8 !important;
+  color:  #EF767A !important;
 }
 
 a.text-info:hover,
@@ -15046,7 +15046,7 @@ img {
   padding: 0.9375rem;
   width: 100%;
   z-index: 1050;
-  background: #ea4c89;
+  background: #171941;
 }
 
 .navbar .photo {
@@ -15060,6 +15060,10 @@ img {
 
 .navbar .photo img {
   width: 100%;
+}
+
+.navbar-shadow {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .navbar .navbar-nav .nav-item .nav-link {

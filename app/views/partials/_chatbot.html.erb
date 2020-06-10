@@ -13,12 +13,12 @@
               bottom: 0 !important;
               right: 0 !important;
             }`
-            new BlipChat()
+            window.blipClient = new BlipChat()
             .withAppKey('c29maWExNjpjOTIwM2ZkYy0xNjY0LTQxODItYjA5Ny03YzNmMzQzODRjMzM=')
             .withButton({"color":"#f9679e","icon":""})
             .withCustomCommonUrl('https://chat.blip.ai/')
             .withCustomStyle(customStyle)
-            .build();
+            window.blipClient.build();
         }
     })();
 </script>
