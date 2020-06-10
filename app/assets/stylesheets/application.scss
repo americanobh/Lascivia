@@ -15,3 +15,12 @@
 @import "orders/index";
 @import "css/blk-design-system-pro";
 @import "css/nucleo-icons";
+@import "css/rotating-card";
+
+
+#blip-chat-container #blip-chat-iframe {
+    bottom: 0 !important;
+    right: 0 !important;
+    height: 90% !important;
+    max-height: 100% !important;
+}

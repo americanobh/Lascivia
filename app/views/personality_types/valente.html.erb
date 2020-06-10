@@ -15,123 +15,91 @@
  -->
 
 
- <!-- <link href="../assets/css/nucleo-icons.css" rel="stylesheet" /> -->
-  <!-- CSS Files -->
-  <!-- <link href="../assets/css/blk-design-system-pro.css?v=1.0.0" rel="stylesheet" /> -->
-
 <body class="landing-page">
   <!-- Navbar -->
 
-  <!-- End Navbar -->
-
-  <div class="wrapper">
-
-
-    <div class="header header-1">
-      <div class="page-header header-filter">
-        <div class="page-header-image" data-parallax="true" style="background-image: url('../assets/img/shop.jpeg');"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-7 mr-auto text-left">
-              <h1 class="title">See our latest collection!</h1>
-              <br />
-              <div class="buttons">
-                <a href="#pablo" class="btn btn-success btn-round btn-lg mr-3 pulse">
-                  <i class="tim-icons icon-bag-16"></i>
-                </a>
-                <p>Shop Now!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-header">
+    <div class="wrapper">
+      <div class="page-header">
       <img src="../assets/img/blob.png" class="path">
       <img src="../assets/img/path2.png" class="path2">
       <img src="../assets/img/triunghiuri.png" class="shapes triangle">
       <img src="../assets/img/waves.png" class="shapes wave">
       <img src="../assets/img/patrat.png" class="shapes squares">
       <img src="../assets/img/cercuri.png" class="shapes circle">
-      <div class="content-center">
+      <div class="container">
         <div class="row row-grid justify-content-between align-items-center text-left">
           <div class="col-lg-6 col-md-6">
-            <hr class="line-info">
-            <h1 class="text-white">A sua personalidade é:
+           <h1 class="text-white">A sua personalidade é:
               <br/>
               <span class="text-white">Valente</span>
             </h1>
-            <p class="text-white mb-3">As valentes vivem num mundo colorido e sensual, inspirado através das conexões com pessoas e ideias. As personalidades Valentes têm alegria em reinterpretar essas conexões, reinventando e experimentando com si próprias e novas perspectivas. Nenhum outro tipo de personalidade explora e experimenta dessa maneira. Isso cria uma sensação de espontaneidade, fazendo os Aventureiros parecerem imprevisíveis, mesmo com seus amigos e entes queridos.</p>
-            <div class="btn-wrapper mb-3">
-              <p class="category text-success d-inline">Ler mais sobre</p>
-              <a href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
-            </div>
 
+            <h4 class="text-white mb-3">As valentes vivem num mundo colorido e sensual, inspirado através das conexões com pessoas e ideias. As personalidades Valentes têm alegria em reinterpretar essas conexões, reinventando e experimentando com si próprias e novas perspectivas. Nenhum outro tipo de personalidade explora e experimenta dessa maneira. Isso cria uma sensação de espontaneidade, fazendo os Aventureiros parecerem imprevisíveis, mesmo com seus amigos e entes queridos.</h4>
+            <div class="btn-wrapper mb-3">
+              <p class="category text-success d-inline">Saber mais sobre</p>
+              <button href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
+            </div>
             <div class="btn-wrapper">
               <div class="button-container">
-                <button href="javascript:void(0)" class="btn btn-icon btn-simple btn-round btn-neutral">
-                  <i class="fab fa-twitter"></i>
-                </button>
-                <button href="javascript:void(0)" class="btn btn-icon btn-simple btn-round btn-neutral">
-                  <i class="fab fa-dribbble"></i>
-                </button>
-                <button href="javascript:void(0)" class="btn btn-icon btn-simple btn-round btn-neutral">
-                  <i class="fab fa-facebook"></i>
-                </button>
+
+                <a href="#itens" class="btn btn-primary btn-round pulse btn-fab">
+                  <i class="tim-icons icon-minimal-down"></i>
+                </a>
+
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-5">
             <img src="../assets/img/valente.png" alt="Circle image" class="img-fluid">
           </div>
-
         </div>
       </div>
     </div>
 
-    <section class="section section-lg">
-        <section class="section section-lg">
+    <section id="itens" class="section section-lg">
 
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-lg-12">
+              <div  class="col-lg-12">
                 <h1 class="text-center"><strong>Valente</strong>,
     nós da Lascívia, <br> recomendamos as 3 categorias abaixo
     <strong></strong> para você se divertir!
-  </p></h1>
+    </p></h1>
+    <br>
                 <div class="row row-grid justify-content-center">
                   <ul class="nav nav-pills nav-pills-primary nav-pills-icons" role="tablist">
         <!--
             color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
         -->
                   <li class="nav-item">
-                      <button class="nav-link" href="#Bullets" role="tab" data-toggle="tab" >
-                          <i class="tim-icons icon-laptop"></i>
+                      <a class="nav-link" href="#Bullets" role="tab" data-toggle="tab" >
+                          <%= image_tag "q3.png", width: "40px" %><br><br>
                           Bullets
-                      </button>
+                      </a>
                   </li>
                   <li class="nav-item">
-                      <button class="nav-link active" href="#Rabbits" role="tab" data-toggle="tab">
-                          <i class="tim-icons icon-settings-gear-63"></i>
+                      <a class="nav-link active" href="#Rabbits" role="tab" data-toggle="tab">
+                          <%= image_tag "q2.png", width: "40px" %><br><br>
                           Rabbits
-                      </button>
+                      </a>
                   </li>
                   <li class="nav-item">
-                      <button class="nav-link" href="#Kits" role="tab" data-toggle="tab">
-                          <i class="tim-icons icon-calendar-60"></i>
+                      <a class="nav-link" href="#Kits" role="tab" data-toggle="tab">
+                          <%= image_tag "q1.png", width: "40px" %><br><br>
                           Kits
-                      </button>
+                      </a>
                   </li>
               </ul>
-              <div class="tab-content tab-space col-12">
+                <div class="tab-content tab-space col-12">
                   <div class="tab-pane active" id="Bullets">
-                    <br><br><br><br><br>
+                    <br><br><br><br>
                     <!-- cards de produtos BULLETS -->
                     <div class="row">
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="flip-card">
+<div class="flip-card-inner">
+                        <div class="card card-coin card-plain flip-card-front">
+
                           <div class="card-header">
                             <img src="../assets/img/toys/golfin.jpg" class="img-center img-fluid">
                           </div>
@@ -155,7 +123,16 @@
                            <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
                           </div>
                         </div>
+                        <!-- #parte de trás do card -->
+                        <br>
+                        <div class="flip-card-back">
+                          <%= image_tag "dragon.png", width: "100%" %>
+                           <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
+                        </div>
                       </div>
+                    </div>
+                  </div>
+
                       <div class="col-md-4">
                         <div class="card card-coin card-plain">
                           <div class="card-header">
@@ -386,7 +363,6 @@
             </div>
           </div>
         </section>
-    </section>
 
 
     <footer class="footer">
@@ -461,8 +437,5 @@
       </div>
     </footer>
   </div>
-  <!--   Core JS Files   -->
-
+ </div>
 </body>
-
-</html>
