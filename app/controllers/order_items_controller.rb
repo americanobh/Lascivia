@@ -16,7 +16,6 @@ class OrderItemsController < ApplicationController
       order_item.quantity += 1
     end
     order_item.save!
-    redirect_to orders_path
   end
 
   private
