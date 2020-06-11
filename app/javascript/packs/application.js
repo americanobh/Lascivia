@@ -16,6 +16,9 @@ import "jquery";
 
 
 
+
+
+
 // document.addEventListener('turbolinks:load', () => {
 //   import "blk-design-system-pro";
 // });
