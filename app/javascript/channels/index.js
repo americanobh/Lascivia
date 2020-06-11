@@ -22,3 +22,18 @@ modal.addEventListener('click', (event) => {
       something.insertAdjacentHTML('beforeend', total);
     });
 })
+
+const plus = document.getElementById('up');
+const minus = document.getElementById('down');
+const number = document.getElementById('myNumber');
+
+plus.addEventListener('click', (event) => {
+  const num = parseInt(number.value);
+  number.value = num + 1;
+})
+
+minus.addEventListener('click', (event) => {
+  const num = parseInt(number.value);
+  if(num > 1)
+  number.value = num - 1;
+})
