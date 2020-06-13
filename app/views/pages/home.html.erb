@@ -43,7 +43,7 @@
                         <use xlink:href="#shape1" style="overflow:visible;"></use>
                       </clipPath>
                       <g clip-path="url(#shape2)">
-                        <image id="imageShape1" style="overflow:visible;" width="800" height="900" xlink:href="assets/img/afropunk.jpg" transform="matrix(0.9488 0 0 0.9488 25 53.1187)"></image>
+                        <image id="imageShape1" style="overflow:visible;" width="800" height="900" xlink:href="<%= asset_path("afropunk.jpg") %>" transform="matrix(0.9488 0 0 0.9488 25 53.1187)"></image>
                       </g>
                     </g>
                     <g>
@@ -83,7 +83,7 @@
     <%= render 'partials/searchbar' %>
 
 
-
+<!--
     <div class="carousel-products" data-flickity='{ "groupCells": true }'>
       <% Product.all.each do |product| %>
         <div class="carousel-cell">
@@ -106,7 +106,7 @@
         </div>
       <% end %>
     </div>
-  </div>
+  </div> -->
 
 <div class="projects-2 project-raised">
             <div class="container">
@@ -145,81 +145,216 @@
               </ul>
               <div class="tab-content tab-space">
                 <div class="tab-pane active" id="project1">
-                  <div class="row mt-5">
-                    <div class="col-md-4">
-                      <div class="card card-blog">
-                        <div class="card-image h-auto">
-                          <img class="img rounded" src="http://s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg?1458052306s">
-                        </div>
-                        <div class="card-body text-left">
-                          <div class="card-footer mt-0">
-                            <div class="stats stats-right">
-                              <div class="stars text-warning">
-                                <i class="tim-icons icon-shape-star"></i>
-                                <i class="tim-icons icon-shape-star"></i>
-                                <i class="tim-icons icon-shape-star"></i>
-                                <i class="tim-icons icon-shape-star"></i>
-                                <i class="tim-icons icon-shape-star"></i>
+                <div class="projects-4">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-8 mr-auto ml-auto text-center">
+                        <h6 class="category text-muted">Our work</h6>
+                        <h2 class="title mt-0">Some of Our Awesome Projects - 4</h2>
+                      </div>
+                    </div>
+                    <div class="space-50"></div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="flip-card">
+                          <div class="flip-card-inner">
+                            <div class="card card-coin card-plain flip-card-front">
+                              <div class="card-header">
+                                <img src="../assets/img/toys/golfin.jpg" class="img-center img-fluid">
+                              </div>
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 text-center">
+                                    <h4 class="text-uppercase">Vibrador Dolphin </h4>
+                                    <span>+ Silencioso</span>
+                                    <hr class="line-primary">
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <ul class="list-group">
+                                    <li class="list-group-item">R$ 49.90</li>
+                                    <li class="list-group-item">Discreto</li>
+                                    <li class="list-group-item">Multivelocidade</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="card-footer text-center">
+                               <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
                               </div>
                             </div>
-                            <div class="author">
-                              <img src="assets/img/Tim.png" alt="..." class="avatar img-raised">
-                              <span>Material Kit</span>
+                            <!-- #parte de trás do card -->
+                            <br>
+                            <div class="flip-card-back">
+                              <%= image_tag "dragon.png", width: "100%" %>
+                               <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card card-blog">
-                        <div class="card-image h-auto">
-                          <img class="img rounded" src="https://s3.amazonaws.com/creativetim_bucket/products/93/original/opt_bd_thumbnail.jpg?1535098178">
-                        </div>
-                        <div class="card-body text-left">
-                          <div class="card-footer mt-0">
-                            <div class="stats stats-right">
-                              <i class="tim-icons icon-heart-2 text-danger"></i> 342 ·
-                              <i class="tim-icons icon-single-copy-04 text-info"></i> 43
-                            </div>
-                            <div class="author">
-                              <img src="assets/img/Tim.png" alt="..." class="avatar img-raised">
-                              <span>Black Dashboard</span>
-                            </div>
+                      <div class="col-lg-4">
+                        <div class="card card-background" style="background-image: url('assets/img/bg7.jpg')">
+                          <div class="card-body text-left">
+                            <h6 class="card-category">
+                              <i class="tim-icons icon-camera-18"></i>
+                            </h6>
+                            <a href="javascript:;">
+                              <h1 class="card-title">Project Beta</h1>
+                            </a>
+                            <h6 class="desc">College project</h6>
+                            <a href="javascript:;" class="btn btn-success">
+                              Watch Later
+                            </a>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="card card-blog">
-                        <div class="card-image h-auto">
-                          <img class="img rounded" src="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg?1544778965">
-                        </div>
-                        <div class="card-body text-left">
-                          <div class="card-footer mt-0">
-                            <div class="stats stats-right">
-                              <i class="tim-icons icon-heart-2 text-danger"></i> 127
-                            </div>
-                            <div class="author">
-                              <img src="assets/img/Tim.png" alt="..." class="avatar img-raised">
-                              <span>Argon Dashboard Pro</span>
-                            </div>
+                      <div class="col-lg-4">
+                        <div class="card card-background" style="background-image: url('assets/img/bg4.jpg')">
+                          <div class="card-body text-left">
+                            <h6 class="card-category">
+                              <i class="tim-icons icon-html5"></i>
+                            </h6>
+                            <a href="javascript:;">
+                              <h1 class="card-title">Project Gama</h1>
+                            </a>
+                            <h6 class="desc">HTML code</h6>
+                            <a href="javascript:;" class="btn btn-warning">
+                              Watch Later
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
                 </div>
                 <div class="tab-pane" id="project2">
                   <div class="space-100"></div>
-                  <div class="col-md-8 ml-auto mr-auto text-center mt-4">
-                    <p class="description mb-5">Add your information here for Project2.</p>
+                  <div class="projects-4">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 mr-auto ml-auto text-center">
+                          <h6 class="category text-muted">Our work</h6>
+                          <h2 class="title mt-0">Some of Our Awesome Projects - 4</h2>
+                        </div>
+                      </div>
+                      <div class="space-50"></div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="card card-background" style="background-image: url('assets/img/bg8.jpg')">
+                            <div class="card-body text-left">
+                              <h6 class="card-category">
+                                <i class="tim-icons icon-atom"></i>
+                              </h6>
+                              <a href="javascript:;">
+                                <h1 class="card-title">Project Alpha</h1>
+                              </a>
+                              <h6 class="desc">Java App</h6>
+                              <a href="javascript:;" class="btn btn-info">
+                                Watch Later
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card card-background" style="background-image: url('assets/img/bg7.jpg')">
+                            <div class="card-body text-left">
+                              <h6 class="card-category">
+                                <i class="tim-icons icon-camera-18"></i>
+                              </h6>
+                              <a href="javascript:;">
+                                <h1 class="card-title">Project Beta</h1>
+                              </a>
+                              <h6 class="desc">College project</h6>
+                              <a href="javascript:;" class="btn btn-success">
+                                Watch Later
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card card-background" style="background-image: url('assets/img/bg4.jpg')">
+                            <div class="card-body text-left">
+                              <h6 class="card-category">
+                                <i class="tim-icons icon-html5"></i>
+                              </h6>
+                              <a href="javascript:;">
+                                <h1 class="card-title">Project Gama</h1>
+                              </a>
+                              <h6 class="desc">HTML code</h6>
+                              <a href="javascript:;" class="btn btn-warning">
+                                Watch Later
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="space-100"></div>
+
                 </div>
                 <div class="tab-pane" id="project3">
                   <div class="space-100"></div>
-                  <div class="col-md-8 ml-auto mr-auto text-center mt-4">
-                    <p class="description mb-5">Add your information here for Project3.</p>
+                  <div class="projects-4">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 mr-auto ml-auto text-center">
+                          <h6 class="category text-muted">Our work</h6>
+                          <h2 class="title mt-0">Some of Our Awesome Projects - 4</h2>
+                        </div>
+                      </div>
+                      <div class="space-50"></div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="card card-background" style="background-image: url('assets/img/bg8.jpg')">
+                            <div class="card-body text-left">
+                              <h6 class="card-category">
+                                <i class="tim-icons icon-atom"></i>
+                              </h6>
+                              <a href="javascript:;">
+                                <h1 class="card-title">Project Alpha</h1>
+                              </a>
+                              <h6 class="desc">Java App</h6>
+                              <a href="javascript:;" class="btn btn-info">
+                                Watch Later
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card card-background" style="background-image: url('assets/img/bg7.jpg')">
+                            <div class="card-body text-left">
+                              <h6 class="card-category">
+                                <i class="tim-icons icon-camera-18"></i>
+                              </h6>
+                              <a href="javascript:;">
+                                <h1 class="card-title">Project Beta</h1>
+                              </a>
+                              <h6 class="desc">College project</h6>
+                              <a href="javascript:;" class="btn btn-success">
+                                Watch Later
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card card-background" style="background-image: url('assets/img/bg4.jpg')">
+                            <div class="card-body text-left">
+                              <h6 class="card-category">
+                                <i class="tim-icons icon-html5"></i>
+                              </h6>
+                              <a href="javascript:;">
+                                <h1 class="card-title">Project Gama</h1>
+                              </a>
+                              <h6 class="desc">HTML code</h6>
+                              <a href="javascript:;" class="btn btn-warning">
+                                Watch Later
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="space-100"></div>
                 </div>
@@ -238,12 +373,6 @@
                   <div class="space-100"></div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-8 ml-auto mr-auto text-center mt-4">
-                  <h3 class="title">Interested in our projects?</h3>
-                  <h4 class="description mb-5">This is the paragraph where you can write more details about your projects. Keep you user engaged by providing meaningful information.</h4>
-                  <button class="btn btn-primary btn-lg">Contact us</button>
-                </div>
-              </div>
+
             </div>
           </div>
