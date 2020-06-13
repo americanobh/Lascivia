@@ -43,7 +43,7 @@
                         <use xlink:href="#shape1" style="overflow:visible;"></use>
                       </clipPath>
                       <g clip-path="url(#shape2)">
-                        <image id="imageShape1" style="overflow:visible;" width="800" height="900" xlink:href="assets/img/afropunk.jpg" transform="matrix(0.9488 0 0 0.9488 25 53.1187)"></image>
+                        <image id="imageShape1" style="overflow:visible;" width="800" height="900" xlink:href="<%= asset_path("afropunk.jpg") %>" transform="matrix(0.9488 0 0 0.9488 25 53.1187)"></image>
                       </g>
                     </g>
                     <g>
@@ -83,7 +83,7 @@
     <%= render 'partials/searchbar' %>
 
 
-
+<!--
     <div class="carousel-products" data-flickity='{ "groupCells": true }'>
       <% Product.all.each do |product| %>
         <div class="carousel-cell">
@@ -106,7 +106,7 @@
         </div>
       <% end %>
     </div>
-  </div>
+  </div> -->
 
 <div class="projects-2 project-raised">
             <div class="container">
