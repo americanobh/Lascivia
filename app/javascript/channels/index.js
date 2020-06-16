@@ -18,7 +18,8 @@ modal.addEventListener('click', (event) => {
         const product = `<tr> <th scope="row">${order_item.quantity}</th> <td>${order_item.product}</td> <td>${order_item.price}</td> <td><a><i class="fas fa-times"></i></a></td> </tr>`;
         something.insertAdjacentHTML("afterbegin", product);
       });
-      const total = `<tr class="total"> <th scope="row"></th> <td><strong>Total</strong></td> <td>R$ ${data.total_sum}</td> <td></td> </tr>`
+      const sum = parseInt(data.total_sum);
+      const total = `<tr class="total"> <th scope="row"></th> <td><strong>Total</strong></td> <td>R$ ${sum}</td> <td></td> </tr>`
       something.insertAdjacentHTML('beforeend', total);
     });
 })
