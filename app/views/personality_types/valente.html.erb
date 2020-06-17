@@ -19,7 +19,7 @@
   <!-- Navbar -->
 
     <div class="wrapper">
-      <div class="page-header">
+      <div class="page-header" style="padding-bottom: 400px; padding-top: 400px;">
       <img src="../assets/img/blob.png" class="path">
       <img src="../assets/img/path2.png" class="path2">
       <img src="../assets/img/triunghiuri.png" class="shapes triangle">
@@ -40,23 +40,25 @@
               <button href="#blk" class="btn btn-success btn-link btn-sm"><i class="tim-icons icon-minimal-right"></i></a>
             </div>
             <div class="btn-wrapper">
-              <div class="button-container">
 
-                <a href="#itens" class="btn btn-primary btn-round pulse btn-fab">
-                  <i class="tim-icons icon-minimal-down"></i>
-                </a>
-
-              </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-5">
             <img src="<%= asset_path("valente.png") %>" alt="Circle image" class="img-fluid">
           </div>
         </div>
+        <div class="button-container">
+          <a href="#itens" style="margin: 50%" class="btn btn-primary pulse btn-fab">
+            <i class="tim-icons icon-minimal-down"></i>
+          </a>
+        </div>
       </div>
     </div>
 
-          <div id="itens" class="projects-2 project-raised">
+
+
+          <div id="itens">
+            <br><br>
             <div class="container">
               <div class="row">
                 <div class="col-lg-8 ml-auto mr-auto text-center mb-5">
@@ -89,7 +91,7 @@
                 </li>
                 </ul>
               </div>
-              <br><br><br>
+              <br><br>
               <div class="tab-content tab-space">
 
                 <div class="tab-pane" id="bullets">
@@ -118,7 +120,7 @@
                             </div>
                           </div>
                           <div class="card-footer text-center">
-                           <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
+                           <%= link_to "Quero esse!", product_path(Product.third.id), method: :get, class: "btn btn-primary btn-simple" %>
                           </div>
                         </div>
                       </div>
@@ -185,7 +187,7 @@
                       <div class="col-md-4">
                         <div class="card card-coin card-plain box">
                           <div class="card-header">
-                            <img src="<%= asset_path("mini.jpg")%>" class="img-center img-fluid">
+                            <img src="<%= asset_path("mini.jpg")%>" class="img-center img-fluid pic">
                           </div>
                           <div class="card-body">
                             <div class="row">
@@ -276,7 +278,6 @@
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-12 text-center">
-                                <br>
                                 <h4 class="text-uppercase">Starter Pack</h4>
                                 <span>Iniciate</span>
                                 <hr class="line-primary">
@@ -355,6 +356,8 @@
             </div>
           </div>
 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <footer class="footer">
