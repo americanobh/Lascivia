@@ -1,5 +1,5 @@
   <nav class="navbar navbar-shadow navbar-expand-sm navbar-light navbar-lewagon fixed-top" color-on-scroll="100" style="height: 80px;">
-    <div class="container" style="padding-bottom: 20px; padding-top: 20px;">
+    <div class="container" style="padding-bottom: 20px; padding-top: 25px;">
       <div class="navbar-translate">
         <%= link_to root_path, class: "navbar-brand" do %>
         <a class="navbar-brand" href="http://localhost:3000/" data-toggle="tooltip" title="Pensamos 100% no seu Bem-estar" data-placement="bottom" target="_blank">
@@ -142,19 +142,20 @@
  -->
 
           <% if user_signed_in? %>
-            <li class="nav-item dropdown">
-              <%= image_tag "https://kitt.lewagon.com/placeholder/users/americanobh", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <li>
+              <button type="button" class="btn btn-warning rounded " data-toggle="modal" data-target="#modalCart" style="padding-left: 9px;padding-right: 9px;margin-right: 10px; padding-left: 16px;padding-right: 16px;"><%= image_tag "carrin.png", width: "22px"%></button>
+            </li>
+            <li class="nav-item dropdown" style="bottom: 1.5px;padding-left: 16px;padding-right: 16px;">
+              <%= image_tag "https://redesuldenoticias.com.br/content/uploads/2020/06/andresa-secretaria-da-mulher.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <%= link_to "Action", "#", class: "dropdown-item" %>
                 <%= link_to "Another action", "#", class: "dropdown-item" %>
                 <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
               </div>
             </li>
-            <li>
-              <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalCart">Carrinho</button>
-            </li>
+
           <% else %>
-            <li class="nav-item">
+            <li class="nav-item" style="padding-left: 16px;padding-right: 16px;">
               <%= link_to "login", new_user_session_path, class: "btn btn-warning btn-simple", id: "login" %>
             </li>
           <% end %>
