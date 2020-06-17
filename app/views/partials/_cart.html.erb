@@ -30,7 +30,7 @@
       <!--Footer-->
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-        <button class="btn btn-primary">Checkout</button>
+        <%= link_to 'Checkout', orders_path(order_item: @order_item)%>
       </div>
     </div>
   </div>
