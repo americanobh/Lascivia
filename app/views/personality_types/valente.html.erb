@@ -95,45 +95,35 @@
                 <div class="tab-pane" id="bullets">
                   <div class="space-100"></div>
                   <div class="col-md-12 ml-auto mr-auto text-center mt-4">
-                    <div class="row">
+                    <div class="row box-wrap">
                       <div class="col-lg-4">
-                        <div class="flip-card">
-                          <div class="flip-card-inner">
-                            <div class="card card-coin card-plain flip-card-front">
-                              <div class="card-header">
-                                <img src="../assets/img/toys/golfin.jpg" class="img-center img-fluid">
-                              </div>
-                              <div class="card-body">
-                                <div class="row">
-                                  <div class="col-md-12 text-center">
-                                    <h4 class="text-uppercase">Vibrador Dolphin </h4>
-                                    <span>+ Silencioso</span>
-                                    <hr class="line-primary">
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <ul class="list-group">
-                                    <li class="list-group-item">R$ 49.90</li>
-                                    <li class="list-group-item">Discreto</li>
-                                    <li class="list-group-item">Multivelocidade</li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="card-footer text-center">
-                               <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
+                        <div class="card card-coin card-plain box">
+                          <div class="card-header">
+                            <img src="../assets/img/toys/golfin.jpg" class="img-center img-fluid">
+                          </div>
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-12 text-center">
+                                <h4 class="text-uppercase">Vibrador Dolphin </h4>
+                                <span>+ Silencioso</span>
+                                <hr class="line-primary">
                               </div>
                             </div>
-                            <!-- #parte de trás do card -->
-                            <br>
-                            <div class="flip-card-back">
-                              <%= image_tag "dragon.png", width: "100%" %>
-                               <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
+                            <div class="row">
+                              <ul class="list-group">
+                                <li class="list-group-item">R$ 49.90</li>
+                                <li class="list-group-item">Discreto</li>
+                                <li class="list-group-item">Multivelocidade</li>
+                              </ul>
                             </div>
+                          </div>
+                          <div class="card-footer text-center">
+                           <%= link_to "Quero esse!", product_path(Product.fourth.id), method: :get, class: "btn btn-primary btn-simple" %>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("power.jpg")%>" class="img-center img-fluid">
                           </div>
@@ -159,7 +149,7 @@
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("bud.jpg")%>" class="img-center img-fluid">
                           </div>
@@ -190,7 +180,7 @@
                 </div>
                 <div class="tab-pane" id="rabbits">
                   <div class="space-100"></div>
-                  <div class="col-md-12 ml-auto mr-auto text-center mt-4 ">
+                  <div class="col-md-12 text-center mt-4 ">
                     <div class="row box-wrap">
                       <div class="col-md-4">
                         <div class="card card-coin card-plain box">
@@ -218,8 +208,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4 box">
-                        <div class="card card-coin card-plain">
+                      <div class="col-md-4 ">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("conrol.jpg")%>" class="img-center img-fluid">
                           </div>
@@ -244,8 +234,8 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-4 box">
-                        <div class="card card-coin card-plain">
+                      <div class="col-md-4 ">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("grandao.jpg")%>" class="img-center img-fluid">
                           </div>
@@ -277,9 +267,9 @@
                 <div class="tab-pane" id="kits">
                   <div class="space-100"></div>
                   <div class="col-md-12 ml-auto mr-auto text-center mt-4">
-                    <div class="row">
+                    <div class="row box-wrap">
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("kittt.jpg")%>" class="img-center img-fluid">
                           </div>
@@ -306,7 +296,7 @@
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("kitt.png")%>" class="img-center img-fluid">
                           </div>
@@ -332,7 +322,7 @@
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="card card-coin card-plain">
+                        <div class="card card-coin card-plain box">
                           <div class="card-header">
                             <img src="<%= asset_path("kit.png")%>" class="img-center img-fluid">
                           </div>
