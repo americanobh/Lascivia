@@ -1,0 +1,38 @@
+
+.box-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.box{
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all;
+}
+
+.pic{
+  box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+  border-radius:3px;
+  transition:.2s all;
+}
+
+.box-wrap:hover .box{
+  filter:blur(3px);
+  opacity:.5;
+  transform: scale(.95);
+  box-shadow:none;
+}
+.box-wrap:hover .box:hover{
+  transform:scale(1.1;
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
+.box-wrap:hover .pic:hover{
+  transform:scale(2);
+  filter:blur(0px);
+  opacity:1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
