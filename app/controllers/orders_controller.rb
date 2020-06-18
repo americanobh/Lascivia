@@ -16,4 +16,10 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
   end
+
+  def close
+    @current_order.open = false
+    @current_order.save!
+    redirect_to valente_path
+  end
 end

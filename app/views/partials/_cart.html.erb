@@ -30,7 +30,9 @@
       <!--Footer-->
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-        <%= link_to 'Checkout', orders_path(order_item: @order_item)%>
+        <% if @current_order %>
+          <%= link_to 'Checkout', order_path(@current_order), class: "btn btn-warning" %>
+        <% end %>
       </div>
     </div>
   </div>

@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :survey_questions
   resources :order_items
-  resources :orders
+  resources :orders do
+    member do
+      get 'close'
+    end
+  end
   resources :products
   resources :categories
   resources :personality_types
