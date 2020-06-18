@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   def set_order
     if current_user
-      @current_order = current_user.order
+      @current_order = Order.find_or_create_by(user: current_user, open: true)
     end
   end
 end
