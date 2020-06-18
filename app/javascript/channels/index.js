@@ -7,6 +7,7 @@ channels.keys().forEach(channels)
 const modal = document.getElementById('modal-btn');
 const something = document.getElementById('tbody');
 
+if (modal){
 modal.addEventListener('click', (event) => {
   console.log("It works!");
   something.innerHTML = '';
@@ -37,4 +38,24 @@ minus.addEventListener('click', (event) => {
   const num = parseInt(number.value);
   if(num > 1)
   number.value = num - 1;
+})
+}
+
+const barrinha = document.querySelector("#barra");
+const porcento = document.querySelector("#porcento");
+
+
+document.querySelector("#irpara").addEventListener('click', () => {
+  barrinha.style.width = "90%";
+  porcento.innerText = "90%";
+})
+
+document.querySelector("#ende").addEventListener('click', () => {
+  barrinha.style.width = "60%";
+  porcento.innerText = "60%";
+})
+
+document.querySelector("#cartao").addEventListener('click', () => {
+  barrinha.style.width = "90%";
+  porcento.innerText = "90%";
 })
