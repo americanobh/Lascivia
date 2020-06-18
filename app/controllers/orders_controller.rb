@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
     protect_from_forgery except: :index
 
   def index
+    sleep 0.5
     @orders =  @current_order.order_items
     @total_sum = 0
     @orders.each do |order_item|
