@@ -13,6 +13,8 @@ class OrdersController < ApplicationController
     end
   end
 
+  def obrigado; end
+
   def show
     @order = Order.find(params[:id])
     @total_sum = 0
@@ -25,6 +27,6 @@ class OrdersController < ApplicationController
   def close
     @current_order.open = false
     @current_order.save!
-    redirect_to valente_path
+    redirect_to thankyou_path
   end
 end
