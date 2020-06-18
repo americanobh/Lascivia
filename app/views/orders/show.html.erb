@@ -18,7 +18,7 @@
                       <h2 class="h6"><%= order_item.product.name %></h2>
                     </div>
                     <div class="media-body text-right">
-                      <span>R$ <%= order_item.product.price %></span>
+                      <span>R$ <%= sprintf('%.2f', order_item.product.price) %></span>
                     </div>
                   </div>
                 <% end %>
@@ -27,20 +27,20 @@
                 <div class="media align-items-center">
                   <h3 class="h6 text-secondary mr-3">Subtotal</h3>
                   <div class="media-body text-right">
-                    <span>$1038</span>
+                    <span>R$ <%= sprintf('%.2f', @total_sum) %></span>
                   </div>
                 </div>
                 <div class="media align-items-center">
-                  <h3 class="h6 text-secondary mr-3">Shipping</h3>
+                  <h3 class="h6 text-secondary mr-3">Frete</h3>
                   <div class="media-body text-right">
-                    <span>$5.8</span>
+                    <span>R$ 17.20 </span>
                   </div>
                 </div>
                 <hr class="line-info mb-3">
                 <div class="media align-items-center">
                   <h3 class="h6">Total</h3>
                   <div class="media-body text-right">
-                    <span class="font-weight-semi-bold">$1045.8</span>
+                    <span class="font-weight-semi-bold">R$ <%= @total_sum + 17.20 %></span>
                   </div>
                 </div>
               </div>
